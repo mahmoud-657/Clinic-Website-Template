@@ -1,0 +1,1201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinic</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ده الخط الازرق والكونتاكت-->
+    <div class="welcome bg-primary text-white py-2">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"
+      >
+        <div class="d-flex align-items-center gap-3">
+          <a href="mailto:contact@example.com" class="email-link text-white">
+            <i class="fa-solid fa-envelope m-1"></i>contact@example.com
+          </a>
+
+          <span>
+            <i class="fa-solid fa-mobile-screen"></i> +1 5589 55488 55
+          </span>
+        </div>
+
+        <div class="social d-flex gap-3">
+          <i class="fa-brands fa-facebook soc"></i>
+          <i class="fa-brands fa-x-twitter soc"></i>
+          <i class="fa-brands fa-instagram soc"></i>
+          <i class="fa-brands fa-linkedin soc"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- اللى جاى الناف بار وربك يستر-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="http://127.0.0.1:5500/index.html#"
+          >Clinic</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto align-items-center gap-2">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-primary"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Departments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Doctors</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Department Details</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Appoinment</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">gallery</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                low section
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">lows</a></li>
+                <li><a class="dropdown-item" href="#">terms</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">privacy</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-3 ratings-float">
+            <div
+              class="text-primary d-flex flex-wrap gap-2 justify-content-center justify-content-md-start"
+            >
+              <div class="rating">
+                <!-- علامه الدرع مش ع فونت اوسم ف جبت دى بس طويله ف هل ليها حل -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  class="bi bi-shield-check"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"
+                  />
+                  <path
+                    d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"
+                  />
+                </svg>
+                <!--  -->
+                <span>Accredited</span>
+              </div>
+              <div class="rating">
+                <i class="fa-regular fa-clock"></i>
+                <span>24/7 Emergency</span>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.9/5 Rating</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 my-4 p-2">
+            <h1 class="fw-bold mb-3 fs-2 fs-md-1">
+              Excellence in <span class="text-primary">Healthcare</span> With
+              Compassionate Care
+            </h1>
+            <p class="text-muted mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation.
+            </p>
+
+            <div class="statics d-flex gap-4 mb-4">
+              <div>
+                <h3 class="text-primary fw-bold mb-0">15+</h3>
+                <p class="text-muted fw-semibold">Years Experience</p>
+              </div>
+              <div>
+                <h3 class="text-primary fw-bold mb-0">5000+</h3>
+                <p class="text-muted fw-semibold">Patients Treated</p>
+              </div>
+              <div>
+                <h3 class="text-primary fw-bold mb-0">50+</h3>
+                <p class="text-muted fw-semibold">Medical Experts</p>
+              </div>
+            </div>
+
+            <div
+              class="hero-home d-flex gap-3 flex-wrap align-items-center mb-4"
+            >
+              <a
+                class="btn bg-primary text-white rounded-pill px-4 py-2 fw-semibold"
+                href="#"
+                >Book Appointment</a
+              >
+
+              <a
+                href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                class="vid btn btn-outline-primary"
+              >
+                <i class="fa-regular fa-circle-play"></i> watch our video</a
+              >
+
+              <div
+                class="d-flex align-items-center border p-3 gap-3 rounded-3 bg-light"
+              >
+                <i
+                  class="fa-solid fa-phone bg-primary p-2 fs-4 rounded-pill"
+                  style="color: #ffffff"
+                ></i>
+                <div class="d-flex flex-column px-2 align align-items-start">
+                  <p class="text-muted my-0">Emergency Hotline</p>
+                  <h4 class="my-0">+1 (555) 911-2468</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 position-relative mt-4 mt-md-0">
+            <span class="circle circle-1"></span>
+            <span class="circle circle-2"></span>
+            <span class="circle circle-3"></span>
+
+            <img
+              src="./imgs/staff-10.jpg"
+              class="img-fluid rounded-4"
+              alt="Doctor"
+            />
+
+            <div
+              class="position-absolute top-0 end-0 m-3 p-3 bg-white rounded-3 shadow-sm d-flex flex-row flex-wrap gap-3 align-items-center"
+            >
+              <i class="fa-solid fa-calendar-check text-primary fs-2"></i>
+              <div class="d-flex flex-column">
+                <div class="fw-semibold small">
+                  Next Available Today 2:30 PM
+                </div>
+                <span class="text-muted">Dr. Sarah Johnson</span>
+              </div>
+            </div>
+
+            <div
+              class="position-absolute bottom-0 start-0 m-3 p-3 bg-white rounded-3 shadow-sm text-center"
+            >
+              <div>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i
+                ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              </div>
+
+              <span class="fw-semibold">4.9/5</span>
+              <br />
+              <span class="text-muted">1,234 Reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ........................................................... -->
+
+    <div
+      class="about"
+      id="about"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 my-4">
+            <h1 class="fw-bold mb-3 fs-2 fs-md-1">
+              Compassionate Care, Advanced Medicine
+            </h1>
+            <p class="text-muted mb-4">
+              For over two decades, we've been dedicated to providing
+              exceptional healthcare that combines cutting-edge medical
+              technology with the personal touch our patients deserve.
+            </p>
+
+            <p class="text-muted mb-4">
+              Our multidisciplinary team of specialists works collaboratively to
+              ensure every patient receives comprehensive care tailored to their
+              unique needs. From preventive services to complex procedures, we
+              maintain the highest standards of medical excellence while
+              fostering an environment of trust and healing.
+            </p>
+
+            <div class="statics d-flex gap-4 mb-4">
+              <div>
+                <h3 class="text-primary fw-bold mb-0">15000+</h3>
+                <p class="text-muted fw-semibold">Patients Served</p>
+              </div>
+              <div>
+                <h3 class="text-primary fw-bold mb-0">25+</h3>
+                <p class="text-muted fw-semibold">Years of Excellence</p>
+              </div>
+              <div>
+                <h3 class="text-primary fw-bold mb-0">50+</h3>
+                <p class="text-muted fw-semibold">Medical Specialists</p>
+              </div>
+            </div>
+
+            <div
+              class="hero-home d-flex gap-3 flex-wrap align-items-center mb-4"
+            >
+              <a
+                class="btn bg-primary text-white rounded-pill px-4 py-2 fw-semibold"
+                href="#"
+                >Learn More About Us</a
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 position-relative mt-4 mt-md-0">
+            <img
+              src="./imgs/facilities-9.webp"
+              class="img-fluid rounded-4"
+              alt="Doctor"
+            />
+
+            <div
+              class="position-absolute top-0 end-0 m-3 p-3 bg-primary rounded-3 shadow-sm d-flex flex-row flex-wrap gap-3 align-items-center"
+            >
+              <div class="d-flex flex-column text-white">
+                <span class="text-center fw-bold fs-4">25+</span>
+                <div class="fw-semibold small fw-bold">
+                  Years of Trusted Care
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="position-absolute bottom-0 start-0 m-3 p-3 bg-white rounded-3 shadow-sm align-items-center d-flex gap-3"
+            >
+              <i
+                class="fa-solid fa-heart-pulse fs-3 border border-1 rounded-5 p-2 text-primary"
+              ></i>
+
+              <div>
+                <span class="d-block text-black fw-semibold"
+                  >24/7 Emergency Care</span
+                >
+                <span class="text-muted"
+                  >Always here when you need us most</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ........................................................... -->
+
+    <div id="departments" class="departments text-center my-5">
+      <div class="mb-5">
+        <h2 class="fw-bold">Featured Departments</h2>
+        <p class="text-muted">
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-start">
+                <span class="badge bg-primary bg-opacity-25 text-primary mb-2">
+                  Specialized Care
+                </span>
+
+                <h4 class="fw-semibold mt-2">Cardiovascular Medicine</h4>
+
+                <p class="text-muted">
+                  Advanced diagnostic imaging and interventional procedures for
+                  comprehensive heart health management.
+                </p>
+
+                <p class="mb-1">
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  24/7 Emergency Cardiac Care
+                </p>
+
+                <p class="mb-3">
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  Minimally Invasive Procedures
+                </p>
+
+                <a
+                  href="#"
+                  class="text-primary fw-semibold text-decoration-none"
+                >
+                  Explore Cardiology <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <img
+                src="./imgs/cardiology-1.webp"
+                class="card-img-bottom img-fluid"
+                alt="cardiology"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-start">
+                <span class="badge bg-primary bg-opacity-25 text-primary mb-2">
+                  Expert Care
+                </span>
+
+                <h4 class="fw-semibold mt-2">Neurological Sciences</h4>
+
+                <p class="text-muted">
+                  Cutting-edge neuroimaging and neurosurgical expertise for
+                  complex brain and spinal cord conditions.
+                </p>
+
+                <p class="mb-1">
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  Advanced Brain Imaging
+                </p>
+
+                <p class="mb-3">
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  Robotic Surgery
+                </p>
+
+                <a
+                  href="#"
+                  class="text-primary fw-semibold text-decoration-none"
+                >
+                  Explore Neurology <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <img
+                src="./imgs/neurology-4.jpg"
+                class="card-img-bottom img-fluid"
+                alt="neurology"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i
+                  class="fa-solid fa-shield-heart fs-2 p-3 text-white bg-primary rounded mb-3"
+                ></i>
+                <h5 class="fw-semibold">Orthopedic Surgery</h5>
+                <p class="text-muted">
+                  Comprehensive musculoskeletal care utilizing advanced
+                  techniques.
+                </p>
+              </div>
+
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item border-0">Sports Medicine</li>
+                <li class="list-group-item border-0">Joint Replacement</li>
+                <li class="list-group-item border-0">Spine Surgery</li>
+              </ul>
+
+              <div class="card-body">
+                <a
+                  href="#"
+                  class="text-primary fw-semibold text-decoration-none"
+                >
+                  Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i
+                  class="fa-solid fa-user-group fs-2 p-3 text-white bg-primary rounded mb-3"
+                ></i>
+                <h5 class="fw-semibold">Pediatric Care</h5>
+                <p class="text-muted">
+                  Child-centered healthcare services with family-focused
+                  approaches.
+                </p>
+              </div>
+
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item border-0">Neonatal Care</li>
+                <li class="list-group-item border-0">
+                  Developmental Pediatrics
+                </li>
+                <li class="list-group-item border-0">Pediatric Surgery</li>
+              </ul>
+
+              <div class="card-body">
+                <a
+                  href="#"
+                  class="text-primary fw-semibold text-decoration-none"
+                >
+                  Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i
+                  class="fa-solid fa-heart-pulse fs-2 p-3 text-white bg-primary rounded mb-3"
+                ></i>
+                <h5 class="fw-semibold">Cardiac Care</h5>
+                <p class="text-muted">
+                  Advanced cardiac diagnostics and personalized treatment plans.
+                </p>
+              </div>
+
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item border-0">Heart Monitoring</li>
+                <li class="list-group-item border-0">Cardiac Surgery</li>
+                <li class="list-group-item border-0">Rehabilitation</li>
+              </ul>
+
+              <div class="card-body">
+                <a
+                  href="#"
+                  class="text-primary fw-semibold text-decoration-none"
+                >
+                  Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ........................................................... -->
+
+    <section
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
+      <div class="container">
+        <div class="row bg-primary rounded-4 p-4 my-2 align-items-center">
+          <div class="col-12 col-md-8 text-white mb-3">
+            <h3 class="fs-5 fs-md-4">Emergency Services Available 24/7</h3>
+            <span class="d-block"
+              >Our emergency department is equipped with state-of-the-art
+              technology and staffed by board-certified emergency physicians
+              ready to provide immediate care.</span
+            >
+          </div>
+
+          <div
+            class="col-12 col-md-4 d-flex justify-content-md-end align-items-center"
+          >
+            <a
+              class="btn bg-white text-primary rounded-pill px-4 py-2 fw-semibold w-100 w-md-auto text-center"
+              href="#"
+            >
+              <i class="fa-solid fa-phone"></i> Call Emergency: (555)
+              123-4567</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ........................................................... -->
+
+    <div
+      id="Services"
+      class="services text-center my-5"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
+      <div class="mb-5">
+        <h2 class="fw-bold">Featured Services</h2>
+        <p class="text-muted">
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <div class="card text-bg-dark position-relative overflow-hidden">
+              <img
+                src="./imgs/consultation-4.webp"
+                class="card-img img-fluid"
+                alt="cons"
+              />
+              <div class="overlay"></div>
+              <div class="card-img-overlay">
+                <span
+                  class="card-title p-3 m-2 bg-white border-0 rounded-pill text-black d-inline-block"
+                >
+                  <i class="fa-solid fa-heart-pulse text-primary"></i> Emergency
+                  Care</span
+                >
+              </div>
+            </div>
+            <div class="d-flex flex-column text-start my-3">
+              <h3>Comprehensive Healthcare Excellence</h3>
+              <span class="my-2 lh-lg"
+                >Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia curae donec velit neque.</span
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 text-center">
+            <h5 class="btn text-primary text-decoration-underline">
+              Explore Our Services
+            </h5>
+
+            <div class="card mb-3 mx-auto border-0" style="width: 18rem">
+              <div class="card-body">
+                <i class="fa-solid fa-capsules text-primary"></i>
+                <h5 class="card-title">Dermatology Clinic</h5>
+                <p class="card-text text-muted">
+                  Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas
+                </p>
+                <a href="#" class="btn text-primary">Learn More</a>
+              </div>
+            </div>
+
+            <div class="card mb-3 mx-auto border-0" style="width: 18rem">
+              <div class="card-body">
+                <i class="fa-solid fa-bandage text-primary"></i>
+                <h5 class="card-title">Surgery Center</h5>
+                <p class="card-text text-muted">
+                  Donec rutrum congue leo eget malesuada curabitur arcu erat
+                  accumsan id imperdiet et porttitor at sem.
+                </p>
+                <a href="#" class="btn text-primary">Learn More</a>
+              </div>
+            </div>
+
+            <div class="card mb-3 mx-auto border-0" style="width: 18rem">
+              <div class="card-body">
+                <i class="fa-solid fa-heart-pulse text-primary"></i>
+                <h5 class="card-title">Diagnostics Lab</h5>
+                <p class="card-text text-muted">
+                  Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                  amet dui cras ultricies ligula sed magna.
+                </p>
+                <a href="#" class="btn text-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gy-4 text-center">
+          <div class="col-6 col-md-3">
+            <div class="d-flex flex-column align-items-center">
+              <img
+                src="./imgs/maternal-2.webp"
+                alt="mat"
+                class="rounded-circle img-fluid mb-3 service-img"
+              />
+              <h6 class="mb-1">Maternal Care</h6>
+              <span class="text-muted small">
+                Expert pregnancy & delivery support
+              </span>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="d-flex flex-column align-items-center">
+              <img
+                src="./imgs/vaccination-3.webp"
+                alt="mat"
+                class="rounded-circle img-fluid mb-3 service-img"
+              />
+              <h6 class="mb-1">Vaccination</h6>
+              <span class="text-muted small">
+                Complete immunization programs
+              </span>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="d-flex flex-column align-items-center">
+              <img
+                src="./imgs/emergency-1.webp"
+                alt="mat"
+                class="rounded-circle img-fluid mb-3 service-img"
+              />
+              <h6 class="mb-1">Emergency Care</h6>
+              <span class="text-muted small">
+                24/7 critical care services
+              </span>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="d-flex flex-column align-items-center">
+              <img
+                src="./imgs/facilities-6.webp"
+                alt="mat"
+                class="rounded-circle img-fluid mb-3 service-img"
+              />
+              <h6 class="mb-1">Advanced Technology</h6>
+              <span class="text-muted small">
+                State-of-the-art medical equipment
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ........................................................... -->
+
+    <div id="doctors" class="doctors text-center my-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold mb-2">Find a Doctor</h2>
+          <p class="text-muted col-lg-6 mx-auto">
+            Search through our comprehensive directory of experienced medical
+            professionals
+          </p>
+
+          <h5 class="fw-semibold">Find Your Perfect Healthcare Provider</h5>
+          <p class="text-muted col-lg-6 mx-auto">
+            Search through our comprehensive directory of experienced medical
+            professionals
+          </p>
+        </div>
+      </div>
+
+      <div class="search-box shadow-sm rounded-pill p-2 mx-auto">
+        <div class="d-flex align-items-center gap-2 flex-column flex-md-row">
+          <input
+            type="text"
+            class="form-control border-0 px-4"
+            placeholder="Enter doctor name"
+          />
+
+          <select class="form-select border-0 px-4">
+            <option selected>All Specialities</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Orthopedics</option>
+            <option>Pediatrics</option>
+            <option>Dermatology</option>
+            <option>Oncology</option>
+          </select>
+
+          <button class="btn btn-primary rounded-pill px-4">
+            <i class="fa-solid fa-magnifying-glass me-2"></i>
+            Find Doctors
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="container my-5"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img
+                  src="./imgs/staff-2.webp"
+                  class="rounded-circle"
+                  width="70"
+                  height="70"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">Dr. David Chen</h6>
+                  <span class="badge bg-primary-subtle text-primary mb-1">
+                    Orthopedic Surgery
+                  </span>
+                  <div class="text-muted small d-flex align-items-center gap-1">
+                    <i class="fa-regular fa-clock"></i>
+                    22 years experience
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-2 mb-4">
+                <div class="text-warning">★★★★★</div>
+                <strong>4.7</strong>
+                <span class="text-muted small">(156 reviews)</span>
+              </div>
+
+              <div class="d-flex gap-2 mt-auto">
+                <button class="btn btn-outline-secondary w-50 rounded-pill">
+                  View Details
+                </button>
+                <button class="btn btn-primary w-50 rounded-pill">
+                  Schedule
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img
+                  src="./imgs/staff-6.webp"
+                  class="rounded-circle"
+                  width="70"
+                  height="70"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">Dr. Victoria Torres</h6>
+                  <span class="badge bg-primary-subtle text-primary mb-1">
+                    Dermatology Care
+                  </span>
+                  <div class="text-muted small d-flex align-items-center gap-1">
+                    <i class="fa-regular fa-clock"></i>
+                    9 years experience
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-2 mb-4">
+                <div class="text-warning">★★★★★</div>
+                <strong>4.5</strong>
+                <span class="text-muted small">(74 reviews)</span>
+              </div>
+
+              <div class="d-flex gap-2 mt-auto">
+                <button class="btn btn-outline-secondary w-50 rounded-pill">
+                  View Details
+                </button>
+                <button class="btn btn-primary w-50 rounded-pill">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img
+                  src="./imgs/staff-4.webp"
+                  class="rounded-circle"
+                  width="70"
+                  height="70"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">Dr. Benjamin Lee</h6>
+                  <span class="badge bg-primary-subtle text-primary mb-1">
+                    Oncology Treatment
+                  </span>
+                  <div class="text-muted small d-flex align-items-center gap-1">
+                    <i class="fa-regular fa-clock"></i>
+                    19 years experience
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-2 mb-4">
+                <div class="text-warning">★★★★★</div>
+                <strong>4.9</strong>
+                <span class="text-muted small">(194 reviews)</span>
+              </div>
+
+              <div class="d-flex gap-2 mt-auto">
+                <button class="btn btn-outline-secondary w-50 rounded-pill">
+                  View Details
+                </button>
+                <button class="btn btn-primary w-50 rounded-pill">
+                  Schedule
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img
+                  src="./imgs/staff-8.webp"
+                  class="rounded-circle"
+                  width="70"
+                  height="70"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">Dr. Amanda Foster</h6>
+                  <span class="badge bg-primary-subtle text-primary mb-1">
+                    Cardiology Specialist
+                  </span>
+                  <div class="text-muted small d-flex align-items-center gap-1">
+                    <i class="fa-regular fa-clock"></i>
+                    14 years experience
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-2 mb-4">
+                <div class="text-warning">★★★★★</div>
+                <strong>4.9</strong>
+                <span class="text-muted small">(127 reviews)</span>
+              </div>
+
+              <div class="d-flex gap-2 mt-auto">
+                <button class="btn btn-outline-secondary w-50 rounded-pill">
+                  View Details
+                </button>
+                <button class="btn btn-primary w-50 rounded-pill">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img
+                  src="./imgs/staff-11.webp"
+                  class="rounded-circle"
+                  width="70"
+                  height="70"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">Dr. Marcus Johnson</h6>
+                  <span class="badge bg-primary-subtle text-primary mb-1">
+                    Neurology Expert
+                  </span>
+                  <div class="text-muted small d-flex align-items-center gap-1">
+                    <i class="fa-regular fa-clock"></i>
+                    16 years experience
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-2 mb-4">
+                <div class="text-warning">★★★★★</div>
+                <strong>4.8</strong>
+                <span class="text-muted small">(89 reviews)</span>
+              </div>
+
+              <div class="d-flex gap-2 mt-auto">
+                <button class="btn btn-outline-secondary w-50 rounded-pill">
+                  View Details
+                </button>
+                <button class="btn btn-primary w-50 rounded-pill">
+                  Schedule
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img
+                  src="./imgs/staff-14.webp"
+                  class="rounded-circle"
+                  width="70"
+                  height="70"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">Dr. Rachel Williams</h6>
+                  <span class="badge bg-primary-subtle text-primary mb-1">
+                    Pediatrics Care
+                  </span>
+                  <div class="text-muted small d-flex align-items-center gap-1">
+                    <i class="fa-regular fa-clock"></i>
+                    11 years experience
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-2 mb-4">
+                <div class="text-warning">★★★★★</div>
+                <strong>5.0</strong>
+                <span class="text-muted small">(203 reviews)</span>
+              </div>
+
+              <div class="d-flex gap-2 mt-auto">
+                <button class="btn btn-outline-secondary w-50 rounded-pill">
+                  View Details
+                </button>
+                <button class="btn btn-primary w-50 rounded-pill">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="#" class="btn btn-outline-primary rounded-pill px-4">
+            View All Doctors →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ........................................................... -->
+
+    <section class="more py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 my-4">
+            <h1 class="fw-bold mb-3">Excellence in Medical Care, Every Day</h1>
+
+            <p class="text-muted mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 mt-4 mt-md-0">
+            <img
+              src="./imgs/facilities-9.webp"
+              class="img-fluid rounded-4 w-100"
+              alt="Doctor"
+            />
+          </div>
+        </div>
+
+        <div
+          class="row my-5"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="col-12">
+            <div class="statics row g-4 text-center text-md-start">
+              <div class="col-12 col-md-4">
+                <i class="fa-solid fa-shield-heart text-primary fs-2 mb-3"></i>
+                <h5 class="fw-bold mb-2">Advanced Technology</h5>
+                <p class="text-muted">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <i class="fa-regular fa-clock text-primary fs-2 mb-3"></i>
+                <h5 class="fw-bold mb-2">24/7 Availability</h5>
+                <p class="text-muted">
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse.
+                </p>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <i class="fa-solid fa-user-group text-primary fs-2 mb-3"></i>
+                <h5 class="fw-bold mb-2">Expert Team</h5>
+                <p class="text-muted">
+                  Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="assit rounded-4 p-4 my-2 d-flex flex-column flex-md-row align-items-center justify-content-between gap-3"
+            >
+              <div class="text-black">
+                <h4 class="fw-bold mb-1">Need Immediate Medical Assistance?</h4>
+                <span class="text-muted">
+                  Our emergency response team is available around the clock to
+                  provide immediate medical support when you need it most.
+                </span>
+              </div>
+
+              <a
+                class="btn bg-primary text-white rounded-pill px-4 py-2 fw-semibold"
+                href="#"
+              >
+                <i class="fa-solid fa-phone me-2"></i>
+                (555) 123-4567
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ........................................................... -->
+
+    <footer class="footer pt-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <h4 class="fw-bold mb-3">Clinic</h4>
+            <p class="text-muted mb-4">
+              Crafting exceptional digital experiences through thoughtful design
+              and innovative solutions that elevate your brand presence.
+            </p>
+
+            <ul class="list-unstyled footer-contact">
+              <li>
+                <i class="fa-solid fa-location-dot me-2"></i>
+                123 Creative Boulevard, Design District, NY 10012
+              </li>
+              <li>
+                <i class="fa-solid fa-phone me-2"></i>
+                +1 (555) 987-6543
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope me-2"></i>
+                hello@designstudio.com
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-semibold mb-3">Studio</h6>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Design Process</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">Awards</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-semibold mb-3">Services</h6>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Brand Identity</a></li>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Mobile Apps</a></li>
+              <li><a href="#">Digital Strategy</a></li>
+              <li><a href="#">Consultation</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-semibold mb-3">Resources</h6>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Design Blog</a></li>
+              <li><a href="#">Style Guide</a></li>
+              <li><a href="#">Free Assets</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">Inspiration</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-semibold mb-3">Connect</h6>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Start Project</a></li>
+              <li><a href="#">Schedule Call</a></li>
+              <li><a href="#">Join Newsletter</a></li>
+              <li><a href="#">Follow Updates</a></li>
+              <li><a href="#">Partnership</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+</html>
